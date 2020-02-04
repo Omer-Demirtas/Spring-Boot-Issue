@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        #btn{
+            margin-right: 45%;
+            margin-left:  45%;
+        }
+        .container{
+            margin-top: 100px;
+        }
+        .logout{
+            margin-top:50px;
+        }
+        .row{
+            margin-top:100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 style="text-align:center">HOME PAGE</h1>
+    <hr style="margin-top: 50px;">
+    <div class="logout">
+        <form action="logout" method="post">
+            <p>
+                <input id="btn" class="btn btn-danger" type="submit" value="logout"/>
+            </p>
+            <input name="_csrf" type="hidden" value="8e692040-424d-4d07-9e81-d1f01e14be52" />
+        </form>
+    </div>
+    <div class="row">
+        <div id="issuelist" class="col-4">
+            <a class="btn btn-outline-success" href="/issue">Issue List</a>
+        </div>
+        <div id="addissue" class="col-4">
+            <a class="btn btn-outline-success" href="/addissue">Add Issue</a>
+        </div>
+        <div id="addperson" class="col-4">
+            <a class="btn btn-outline-success" href="/addperson">Add Person</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
